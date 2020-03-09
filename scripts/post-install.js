@@ -9,6 +9,6 @@ const links = require('./links.json');
 	const projectDir = process.env.INIT_CWD || path.resolve("../../", __dirname);
 	console.log('projectdir', projectDir)
 	for (let link of links) {
-		await symLink(join(projectDir, 'node_modules', link), join(projectDir, link));
+		await symLink(`${link}`, join(projectDir, link));
 	}
 })();
