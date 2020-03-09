@@ -1,0 +1,22 @@
+{
+  "name": "configs",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"postinstall": "node ./scripts/post-install.js",
+		"preuninstall": "node ./scripts/pre-install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevor-atlas/configs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevor-atlas/configs/issues"
+  },
+  "homepage": "https://github.com/trevor-atlas/configs#readme"
+}
