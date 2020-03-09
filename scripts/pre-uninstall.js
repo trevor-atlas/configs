@@ -7,6 +7,7 @@ const links = require('./links.json');
 
 (async () => {
 	const projectDir = process.env.INIT_CWD || path.resolve("../../", __dirname);
+	console.log('projectdir', projectDir)
 	for (let link in links) {
 		await unlinkAsync(`./${link}`, join(projectDir, link));
 	}
